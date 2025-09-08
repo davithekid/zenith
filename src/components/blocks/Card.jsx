@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { AlertDialogDemo } from "./Dialog"
 
 export function CardDemo() {
 
@@ -24,8 +25,9 @@ export function CardDemo() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <img src="https://i.redd.it/4bqvflu73ud81.png" className="rounded" alt="" />
-        <p className="py-2">R$ 300,00</p>
+        <img src="https://i.redd.it/4bqvflu73ud81.png" className="rounded mb-2" alt="" />
+        <AlertDialogDemo/>
+        <p className="py-2 font-bold">R$ 300,00</p>
       </CardContent>
       <CardFooter className="flex-col gap-2">
         <Button type="submit" className="w-full">

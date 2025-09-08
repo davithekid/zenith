@@ -10,7 +10,8 @@ export function SeparatorDemo() {
           Adquire templates para ajudar o seu estudo
         </p>
       </div>
-      <div className="flex justify-between py-6">
+      <div className="flex justify-between py-6 gap-8">
+        <CardDemo />
         <CardDemo />
         <CardDemo />
         <CardDemo />

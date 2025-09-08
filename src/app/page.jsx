@@ -1,3 +1,4 @@
+import { AccordionDemo } from "@/components/blocks/Accordion";
 import { CardDemo } from "@/components/blocks/Card";
 import { AvatarDemo } from "@/components/blocks/Icon";
 import { NavigationMenuDemo } from "@/components/blocks/Navbar";
@@ -10,15 +11,15 @@ export default function Home() {
       <header className="mx-auto container flex justify-between py-6">
         <NavigationMenuDemo />
         <div className="flex gap-4">
-        <ModeToggle/>
-        <AvatarDemo />
+          <ModeToggle />
+          <AvatarDemo />
         </div>
       </header>
 
 
       <section className="mx-auto py-10 container ">
-      <SeparatorDemo />
-    
+        <SeparatorDemo />
+        <AccordionDemo />
       </section>
 
 

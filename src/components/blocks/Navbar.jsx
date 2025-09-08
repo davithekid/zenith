@@ -17,40 +17,12 @@ import { AvatarDemo } from "./Icon"
 
 const components = [
   {
-    title: "Alert Dialog",
+    title: "Modelos",
     href: "/docs/primitives/alert-dialog",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Modelos e templates para serem usados.",
   },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
+  
 ]
 
 export function NavigationMenuDemo() {
@@ -58,7 +30,7 @@ export function NavigationMenuDemo() {
     <NavigationMenu viewport={false} className="z-10">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>ZENITH</NavigationMenuTrigger>
+          <NavigationMenu className={"font-bold"}>ZENITH</NavigationMenu>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
