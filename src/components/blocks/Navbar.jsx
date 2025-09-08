@@ -17,10 +17,16 @@ import { AvatarDemo } from "./Icon"
 
 const components = [
   {
-    title: "Modelos",
+    title: "Pomodoros",
     href: "#templates",
     description:
-      "Modelos e templates para serem usados.",
+      "Tecnica de pomodoro visando maior contentração.",
+  },
+  {
+    title: "Mais foco, menos ansiedade",
+    href: "#templates",
+    description:
+      "Inspirado no pctheone!.",
   },
   
 ]
@@ -54,7 +60,7 @@ export function NavigationMenuDemo() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/planos">Comparar planos</Link>
+            <Link href="/planos">Planos</Link>
           </NavigationMenuLink>
 
         </NavigationMenuItem>

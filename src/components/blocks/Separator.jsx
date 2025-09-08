@@ -12,9 +12,7 @@ export function SeparatorDemo() {
       </div>
       <div className="flex justify-between py-6 gap-8">
         <CardDemo />
-        <CardDemo />
-        <CardDemo />
-        <CardDemo />
+
       </div>
       <Separator className="my-4" />
      
