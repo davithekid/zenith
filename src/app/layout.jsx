@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br">
+    <html lang="en" suppressHydrationWarning>
      <body>
           <ThemeProvider
             attribute="class"
