@@ -18,7 +18,7 @@ import { AvatarDemo } from "./Icon"
 const components = [
   {
     title: "Modelos",
-    href: "/docs/primitives/alert-dialog",
+    href: "#templates",
     description:
       "Modelos e templates para serem usados.",
   },
@@ -30,12 +30,14 @@ export function NavigationMenuDemo() {
     <NavigationMenu viewport={false} className="z-10">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenu className={"font-bold"}>ZENITH</NavigationMenu>
+          <NavigationMenu className={"font-bold"}>
+            <Link href="/">ZENITH</Link>
+          </NavigationMenu>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+            <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px] scroll-smooth">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -52,7 +54,7 @@ export function NavigationMenuDemo() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/docs">Comparar planos</Link>
+            <Link href="/planos">Comparar planos</Link>
           </NavigationMenuLink>
 
         </NavigationMenuItem>

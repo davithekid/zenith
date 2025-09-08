@@ -2,10 +2,10 @@ import { AccordionDemo } from "@/components/blocks/Accordion";
 import { CardDemo } from "@/components/blocks/Card";
 import { AvatarDemo } from "@/components/blocks/Icon";
 import { NavigationMenuDemo } from "@/components/blocks/Navbar";
-import { SeparatorDemo } from "@/components/blocks/Separator";
+import { SeparatorPlanos } from "@/components/blocks/SeparatorPlanos";
 import { ModeToggle } from "@/components/themes/botao";
 
-export default function Home() {
+export default function Planos() {
   return (
     <>
       <header className="mx-auto container flex justify-between py-6">
@@ -17,8 +17,8 @@ export default function Home() {
       </header>
 
 
-      <section id="templates" className="mx-auto py-10 container ">
-        <SeparatorDemo />
+      <section className="mx-auto py-10 container">
+        <SeparatorPlanos />
         <AccordionDemo />
       </section>
 
