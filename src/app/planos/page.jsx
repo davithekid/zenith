@@ -1,5 +1,4 @@
-import { AccordionDemo } from "@/components/blocks/Accordion";
-import { CardDemo } from "@/components/blocks/Card";
+import { AccordionPlanos } from "@/components/blocks/AccordionPlanos";
 import { AvatarDemo } from "@/components/blocks/Icon";
 import { NavigationMenuDemo } from "@/components/blocks/Navbar";
 import { SeparatorPlanos } from "@/components/blocks/SeparatorPlanos";
@@ -19,7 +18,7 @@ export default function Planos() {
 
       <section className="mx-auto py-10 container">
         <SeparatorPlanos />
-        <AccordionDemo />
+        <AccordionPlanos />
       </section>
 
 
