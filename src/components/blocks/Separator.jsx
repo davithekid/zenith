@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator"
 import { CardDemo } from "./Card"
 import { Component } from "./GraficoBarra"
-import { ChartPieSimple, ComponentPie } from "./GraficoPizza"
+import { ChartPieSimple } from "./GraficoPizza"
 
 export function SeparatorDemo() {
   return (

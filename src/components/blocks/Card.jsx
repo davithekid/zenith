@@ -24,23 +24,24 @@ export function CardDemo() {
     },
     {
       id: 2,
-      title: 'Pomodoro',
-      description: 'Técnica para mais foco',
+      title: 'Feynman',
+      description: 'Aprender ensinando outra pessoa',
       img: 'https://i.redd.it/4bqvflu73ud81.png',
     },
     {
       id: 3,
-      title: 'Pomodoro',
-      description: 'Técnica para mais foco',
+      title: 'Mapas Mentais',
+      description: 'Organizar ideias de forma visual',
       img: 'https://i.redd.it/4bqvflu73ud81.png',
     },
     {
       id: 4,
-      title: 'Pomodoro',
-      description: 'Técnica para mais foco',
+      title: 'Prática Espaçada',
+      description: 'Revisar em intervalos para fixar melhor',
       img: 'https://i.redd.it/4bqvflu73ud81.png',
     },
-  ]
+  ];
+
 
   return (
     <>
