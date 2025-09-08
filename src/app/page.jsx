@@ -1,5 +1,6 @@
 import { AccordionDemo } from "@/components/blocks/Accordion";
 import { CardDemo } from "@/components/blocks/Card";
+import { Component } from "@/components/blocks/GraficoBarra";
 import { AvatarDemo } from "@/components/blocks/Icon";
 import { NavigationMenuDemo } from "@/components/blocks/Navbar";
 import { SeparatorDemo } from "@/components/blocks/Separator";
@@ -21,6 +22,8 @@ export default function Home() {
         <SeparatorDemo />
         <AccordionDemo />
       </section>
+      
+
 
 
     </>
