@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { usePathname } from "next/navigation"
+import { usePathname } from "next/navigation" 
 import Link from "next/link"
 import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
 
@@ -43,6 +43,7 @@ export function NavigationMenuDemo() {
           </NavigationMenu>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          {/* links corretos para redirecionamento conforme a aba que estiver aberta... */}
           {pathname === "/" ? (
             <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
           ) : pathname === "/planos" ? (
