@@ -18,26 +18,27 @@ export function CardPlanos() {
     const planos = [
         {
             id: 1,
-            title: 'Plano Básico',
-            description: 'Acesso a templates',
+            title: 'Plano Essencial',
+            description: 'Acesso a técnicas básicas de estudo',
             img: 'https://blog.thenounproject.com/wp-content/uploads/2024/02/notion-header-1-1280x720.png',
             preco: 'R$19,99/mês',
         },
         {
             id: 2,
-            title: 'Plano Premium',
-            description: 'Acesso a templates e comunidade',
+            title: 'Plano Avançado',
+            description: 'Inclui métodos de estudo e acesso à comunidade',
             img: 'https://blog.thenounproject.com/wp-content/uploads/2024/02/notion-header-1-1280x720.png',
             preco: 'R$39,99/mês',
         },
         {
             id: 3,
-            title: 'Plano Super Premium',
-            description: 'Acesso a templates, comunidades e streams!',
+            title: 'Plano Mestre',
+            description: 'Técnicas completas, comunidade ativa e mentorias',
             img: 'https://blog.thenounproject.com/wp-content/uploads/2024/02/notion-header-1-1280x720.png',
             preco: 'R$64,99/mês',
         }
-    ]
+    ];
+
 
 
     return (
