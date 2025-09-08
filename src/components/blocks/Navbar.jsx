@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import { usePathname } from "next/navigation"
 import Link from "next/link"
 import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
 
@@ -28,10 +29,11 @@ const components = [
     description:
       "Inspirado no pctheone!.",
   },
-  
+
 ]
 
 export function NavigationMenuDemo() {
+  const pathname = usePathname()
   return (
     <NavigationMenu viewport={false} className="z-10">
       <NavigationMenuList>
@@ -41,7 +43,11 @@ export function NavigationMenuDemo() {
           </NavigationMenu>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
+          {pathname === "/" ? (
+            <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
+          ) : pathname === "/planos" ? (
+            <NavigationMenuTrigger>Planos</NavigationMenuTrigger>
+          ) : null}
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px] scroll-smooth">
               {components.map((component) => (
@@ -56,12 +62,17 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-      
+
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/planos">Planos</Link>
+            {pathname === "/" ? (
+              <Link href="/planos">Planos</Link>
+            ) : pathname === "/planos" ? (
+              <Link href="/">Templates</Link>
+            ) : null}
           </NavigationMenuLink>
+
 
         </NavigationMenuItem>
       </NavigationMenuList>
@@ -85,7 +96,7 @@ function ListItem({
           </p>
         </Link>
       </NavigationMenuLink>
-     
+
     </li>
   )
 }
