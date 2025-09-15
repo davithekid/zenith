@@ -29,7 +29,7 @@ export default function CarouselSlides() {
       id: 2,
       title: "Feynman",
       description: "Aprender ensinando outra pessoa",
-      img: "https://i.redd.it/4bqvflu73ud81.png",
+      img: "https://blog.thenounproject.com/wp-content/uploads/2024/02/notion-header-1-1280x720.png",
     },
     {
       id: 3,

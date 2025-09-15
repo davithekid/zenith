@@ -12,12 +12,12 @@ export const NavMenu = (props) => (
       className="gap-3 space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">Home</Link>
+          <Link href="/">Home</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">Planos</Link>
+          <Link href="/planos">Planos</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
