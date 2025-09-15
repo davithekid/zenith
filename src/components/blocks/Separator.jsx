@@ -19,17 +19,17 @@ export function SeparatorDemo() {
 
       </div>
 
-      <div className="space-y-1 px-6">
+      {/* <div className="space-y-1 px-6">
         <h4 className="text-sm lg:text-2xl leading-none font-bold flex justify-center">Dados com templates mais usados</h4>
         <p className="text-muted-foreground text-sm lg:text-sm flex justify-center">
           Templates mais usados conforme usuários
         </p>
-      </div>
-      <div className="flex py-6 items-center">
+      </div> */}
+      {/* <div className="flex py-6 items-center">
 
         <Component />
         <ChartPieSimple />
-      </div>
+      </div> */}
       <Separator className="my-4" />
 
     </div>

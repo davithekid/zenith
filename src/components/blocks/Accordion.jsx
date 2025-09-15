@@ -13,7 +13,7 @@ import {
         className="w-full"
         defaultValue="item-1"
       >
-        <div className="px-3">
+        <div className="px-3 py-12">
 
         <AccordionItem value="item-1">
           <AccordionTrigger className={"font-bold"}>Templates informações</AccordionTrigger>
