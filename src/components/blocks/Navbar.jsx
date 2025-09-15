@@ -39,7 +39,7 @@ export function NavigationMenuDemo() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenu className={"font-bold"}>
-            <Link href="/">ZENITH</Link>
+            <Link href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Zenith_logo_1954.svg" alt="" className="w-20 flex items-center mr-5" /></Link>
           </NavigationMenu>
         </NavigationMenuItem>
         <NavigationMenuItem>

@@ -5,6 +5,8 @@ import { Hero45 } from "@/components/blocks/Hero";
 import { AvatarDemo } from "@/components/blocks/Icon";
 import { NavigationMenuDemo } from "@/components/blocks/Navbar";
 import { SeparatorDemo } from "@/components/blocks/Separator";
+import CarouselWithMultipleSlides from "@/components/carousel-02";
+import CarouselSlides from "@/components/Carrossel/carrossel";
 import Contact02Page from "@/components/contact-02/contact-02";
 import FAQ07 from "@/components/faq-07/faq-07";
 import Footer05Page from "@/components/footer-05/footer-05";
@@ -25,6 +27,7 @@ export default function Home() {
 
       <section id="templates" className="mx-auto py-10 container ">
         <Hero45/>
+        <CarouselSlides/>
         <SeparatorDemo />
         <Testimonial04/>
         <FAQ07/>
