@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator"
 import { CardPlanos } from "./CardPlanos"
-import Pricing02 from "@/app/pricing/page"
+import Pricing02 from "@/components/blocks/pricing/page"
 import Stats01Page from "../stats-01/stats-01"
 
 export function SeparatorPlanos() {
