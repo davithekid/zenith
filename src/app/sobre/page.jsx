@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar-04/navbar-04";
 export default function Sobre() {
     return (
         <>
-            <header className="z-100">
+            <header>
                 <Navbar />
             </header>
 
