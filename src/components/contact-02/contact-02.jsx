@@ -16,116 +16,116 @@ const Contact02Page = () => (
       <h2 className="mt-3 text-3xl md:text-4xl font-semibold tracking-tight">
         Envie uma mensagegem para o nosso time!
       </h2>
-      
+
       <div className="mt-24 grid lg:grid-cols-2 gap-16 md:gap-10">
-        <div className="hidden md:block lg:grid sm:grid-cols-2 gap-x-8 gap-y-12  ">
+        <div className="hidden md:grid sm:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-12">
+          {/* Email */}
           <div>
-            <div
-              className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
+            <div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
               <MailIcon />
             </div>
             <h3 className="mt-6 font-semibold text-xl">Email</h3>
             <p className="my-2.5 text-muted-foreground">
-              Our friendly team is here to help.
+              Nossa equipe de suporte está pronta para te ajudar.
             </p>
-            <Link
-              className="font-medium text-primary"
-              href="mailto:akashmoradiya3444@gmail.com">
-              akashmoradiya3444@gmail.com
+            <Link className="font-medium text-primary" href="mailto:suporte@meusite.com">
+              suporte@meusite.com
             </Link>
           </div>
+
+          {/* Chat ao vivo */}
           <div>
-            <div
-              className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
+            <div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
               <MessageCircle />
             </div>
-            <h3 className="mt-6 font-semibold text-xl">Live chat</h3>
+            <h3 className="mt-6 font-semibold text-xl">Chat ao vivo</h3>
             <p className="my-2.5 text-muted-foreground">
-              Our friendly team is here to help.
+              Converse em tempo real com nossa equipe.
             </p>
             <Link className="font-medium text-primary" href="#">
-              Start new chat
+              Iniciar chat
             </Link>
           </div>
+
+          {/* Escritório */}
           <div>
-            <div
-              className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
+            <div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
               <MapPinIcon />
             </div>
-            <h3 className="mt-6 font-semibold text-xl">Office</h3>
+            <h3 className="mt-6 font-semibold text-xl">Escritório</h3>
             <p className="my-2.5 text-muted-foreground">
-              Come say hello at our office HQ.
+              Visite-nos e conheça nossa equipe de perto.
             </p>
             <Link
               className="font-medium text-primary"
-              href="https://map.google.com"
-              target="_blank">
-              100 Smith Street Collingwood <br /> VIC 3066 AU
+              href="https://maps.google.com"
+              target="_blank"
+            >
+              Rua Exemplo, 100 <br /> Cidade, Estado
             </Link>
           </div>
+
+          {/* Telefone */}
           <div>
-            <div
-              className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
+            <div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
               <PhoneIcon />
             </div>
-            <h3 className="mt-6 font-semibold text-xl">Phone</h3>
+            <h3 className="mt-6 font-semibold text-xl">Telefone</h3>
             <p className="my-2.5 text-muted-foreground">
-              Mon-Fri from 8am to 5pm.
+              Atendimento de segunda a sexta, das 8h às 17h.
             </p>
-            <Link
-              className="font-medium text-primary"
-              href="tel:akashmoradiya3444@gmail.com">
-              +1 (555) 000-0000
+            <Link className="font-medium text-primary" href="tel:+5511999999999">
+              +55 (11) 99999-9999
             </Link>
           </div>
-        </div>
-
-        {/* Form */}
-        <Card className="bg-accent shadow-none py-0">
-          <CardContent className="p-6 md:p-8">
-            <form>
-              <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
-                <div className="col-span-2 sm:col-span-1">
-                  <Label htmlFor="firstName">First Name</Label>
-                  <Input
-                    placeholder="First name"
-                    id="firstName"
-                    className="mt-2 bg-white h-10 shadow-none" />
-                </div>
-                <div className="col-span-2 sm:col-span-1">
-                  <Label htmlFor="lastName">Last Name</Label>
-                  <Input
-                    placeholder="Last name"
-                    id="lastName"
-                    className="mt-2 bg-white h-10 shadow-none" />
-                </div>
-                <div className="col-span-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    type="email"
-                    placeholder="Email"
-                    id="email"
-                    className="mt-2 bg-white h-10 shadow-none" />
-                </div>
-                <div className="col-span-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea
-                    id="message"
-                    placeholder="Message"
-                    className="mt-2 bg-white shadow-none"
-                    rows={6} />
-                </div>
-                
-              </div>
-              <Button className="mt-6 w-full" size="lg">
-                Submit
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
       </div>
+
+      {/* Form */}
+      <Card className="bg-accent shadow-none py-0">
+        <CardContent className="p-6 md:p-8">
+          <form>
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
+              <div className="col-span-2 sm:col-span-1">
+                <Label htmlFor="firstName">Nome</Label>
+                <Input
+                  placeholder="First name"
+                  id="firstName"
+                  className="mt-2 bg-white h-10 shadow-none" />
+              </div>
+              <div className="col-span-2 sm:col-span-1">
+                <Label htmlFor="lastName">Sobrenome</Label>
+                <Input
+                  placeholder="Last name"
+                  id="lastName"
+                  className="mt-2 bg-white h-10 shadow-none" />
+              </div>
+              <div className="col-span-2">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  type="email"
+                  placeholder="Email"
+                  id="email"
+                  className="mt-2 bg-white h-10 shadow-none" />
+              </div>
+              <div className="col-span-2">
+                <Label htmlFor="message">Mensagem</Label>
+                <Textarea
+                  id="message"
+                  placeholder="Message"
+                  className="mt-2 bg-white shadow-none"
+                  rows={6} />
+              </div>
+
+            </div>
+            <Button className="mt-6 w-full" size="lg">
+              Submit
+            </Button>
+          </form>
+        </CardContent>
+      </Card>
     </div>
   </div>
+  </div >
 );
 
 export default Contact02Page;
