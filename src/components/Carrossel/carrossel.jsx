@@ -1,4 +1,14 @@
-import { Card, CardContent } from "@/components/ui/card";
+import React from "react";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardFooter,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { AlertDialogDemo } from "@/components/blocks/Dialog";
 import {
   Carousel,
   CarouselContent,
@@ -6,39 +16,71 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import React from "react";
 
 export default function CarouselSlides() {
-  const images = [
-    { id: 1, img: "/transformers.jfif" },
-    { id: 2, img: "/transformers.jfif" },
-    { id: 2, img: "/transformers.jfif" },
-    { id: 2, img: "/transformers.jfif" },
-    { id: 2, img: "/transformers.jfif" },
-    { id: 2, img: "/transformers.jfif" },
+  const templates = [
+    {
+      id: 1,
+      title: "Pomodoro",
+      description: "Técnica para mais foco",
+      img: "https://i.redd.it/4bqvflu73ud81.png",
+    },
+    {
+      id: 2,
+      title: "Feynman",
+      description: "Aprender ensinando outra pessoa",
+      img: "https://i.redd.it/4bqvflu73ud81.png",
+    },
+    {
+      id: 3,
+      title: "Mapas Mentais",
+      description: "Organizar ideias de forma visual",
+      img: "https://i.redd.it/4bqvflu73ud81.png",
+    },
+    {
+      id: 4,
+      title: "Prática Espaçada",
+      description: "Revisar em intervalos para fixar melhor",
+      img: "https://i.redd.it/4bqvflu73ud81.png",
+    },
+    {
+      id: 5,
+      title: "Prática Espaçada",
+      description: "Revisar em intervalos para fixar melhor",
+      img: "https://i.redd.it/4bqvflu73ud81.png",
+    },
+    {
+      id: 6,
+      title: "Prática Espaçada",
+      description: "Revisar em intervalos para fixar melhor",
+      img: "https://i.redd.it/4bqvflu73ud81.png",
+    },
   ];
 
   return (
-    <Carousel
-      opts={{
-        align: "start",
-      }}
-      className="w-full max-w-sm"
-    >
+    <Carousel opts={{ align: "start" }} className="w-full">
       <CarouselContent>
-        {images.map((item) => (
-          <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <img
-                    src={item.img}
-                    alt={`Slide ${item.id}`}
-                    className="rounded-lg object-cover"
-                  />
-                </CardContent>
-              </Card>
-            </div>
+        {templates.map((item) => (
+          <CarouselItem key={item.id} className="basics-4/4 lg:basis-1/4 ">
+            <Card className="w-full">
+              <CardHeader>
+                <CardTitle>{item.title}</CardTitle>
+                <CardDescription>{item.description}</CardDescription>
+              </CardHeader>
+              <CardContent className="flex flex-col items-center justify-center p-6">
+                <img
+                  src={item.img}
+                  alt={`Slide ${item.id}`}
+                  className="rounded-lg object-cover mb-2"
+                />
+                <AlertDialogDemo/>
+              </CardContent>
+              <CardFooter className="flex-col gap-2">
+                <Button type="submit" className="w-full">
+                  Acessar
+                </Button>
+              </CardFooter>
+            </Card>
           </CarouselItem>
         ))}
       </CarouselContent>

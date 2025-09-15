@@ -18,7 +18,7 @@ const Contact02Page = () => (
       </h2>
       
       <div className="mt-24 grid lg:grid-cols-2 gap-16 md:gap-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
+        <div className="hidden md:block lg:grid sm:grid-cols-2 gap-x-8 gap-y-12  ">
           <div>
             <div
               className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">

@@ -5,7 +5,7 @@ import { NavigationSheet } from "./navigation-sheet";
 import { ModeToggle } from "../themes/botao";
 import { AvatarDemo } from "../blocks/Icon";
 
-const Navbar04Page = () => {
+const Navbar = () => {
   return (
     <div className="bg-muted">
       <nav
@@ -33,4 +33,4 @@ const Navbar04Page = () => {
   );
 };
 
-export default Navbar04Page;
+export default Navbar;

@@ -8,41 +8,41 @@ const testimonials = [
   {
     id: 1,
     name: "Davi Chagas",
-    designation: "Software Engineer",
-    company: "TechCorp",
+    designation: "Estudante de Desenvolvimento de Sistemas",
+    company: "SENAI",
     testimonial:
-      "This product has completely transformed the way we work. The efficiency and ease of use are unmatched!",
+      "A metodologia Pomodoro me ajudou a manter o foco e organizar melhor meu tempo. Hoje consigo estudar com muito mais eficiência.",
     avatar: "https://randomuser.me/api/portraits/men/1.jpg",
   },
   {
     id: 2,
-    name:"Cherry",
-    designation: "Data Analyst",
+    name: "Maria Oliveira",
+    designation: "Analista de Dados",
     company: "InsightTech",
     testimonial:
-      "This tool has saved me hours of work! The analytics and reporting features are incredibly powerful.",
+      "Com a Técnica de Feynman, consigo aprender de verdade. Explicar os conteúdos para mim mesma mudou totalmente a forma como estudo.",
     avatar: "https://randomuser.me/api/portraits/women/6.jpg",
   },
   {
     id: 3,
-    name: "Lalau",
-    designation: "UX Designer",
+    name: "Lucas Almeida",
+    designation: "Designer UX",
     company: "DesignPro",
     testimonial:
-      "An amazing tool that simplifies complex tasks. Highly recommended for professionals in the industry.",
+      "Os Mapas Mentais tornaram muito mais fácil organizar minhas ideias. Agora consigo visualizar o conteúdo de forma clara e prática.",
     avatar: "https://randomuser.me/api/portraits/men/3.jpg",
   },
   {
     id: 4,
-    name: "Ramone spier",
-    designation: "Marketing Specialist",
+    name: "Carla Fernandes",
+    designation: "Especialista em Marketing",
     company: "BrandBoost",
     testimonial:
-      "I've seen a significant improvement in our team's productivity since we started using this service.",
+      "A Prática Espaçada revolucionou meus estudos. Revisar em intervalos me ajudou a fixar melhor os conteúdos e ter resultados duradouros.",
     avatar: "https://randomuser.me/api/portraits/women/4.jpg",
   },
-  
 ];
+
 
 const Testimonial04 = () => (
   <div className="flex justify-center items-center py-12">
